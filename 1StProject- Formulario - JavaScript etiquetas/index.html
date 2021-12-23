@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Alumno</title>
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="style.css">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/ac29e13ac3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="img__container">
+            <img src="./img/user.jpg" alt="">
+        </div>
+        
+        <h3>Nombre Alumno</h3>
+        <span class="ubi">Valencia | España</span>
+
+        <form class="form">
+            <label for="name">Nombre y Apellidos</label>
+            <input type="text" name="name" id="name" placeholder="Nombre Alumno">
+            <label for="tel">NºTeléfono</label>
+            <input type="tel" name="tel" id="tel" placeholder="+34 654 85 52 48">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="hcliment@gmail.com">
+            <label for="pais">País</label>
+            <select name="pais" id="pais">
+                <option value="" selected>España</option>
+                <option value="">Francia</option>
+                <option value="">Venezuela</option>
+                <option value="">Colombia</option>
+                <option value="">Italia</option>
+                <option value="">Argentina</option>
+            </select>
+            <label for="ciudad">Ciudad</label>
+            <select name="ciudad" id="ciudad">
+                <option value="" selected>Valencia</option>
+                <option value="">Madrid</option>
+                <option value="">Cádiz</option>
+                <option value="">Barcelona</option>
+                <option value="">Toledo</option>
+                <option value="">Sevilla</option>
+            </select>
+            <label for="traslado">Traslado</label>
+            <select name="traslado" id="traslado">
+                <option value="" selected>No</option>
+                <option value="">Sí</option>
+            </select>
+            <label for="presencialidad">Presencialidad</label>
+            <select name="presencialidad" id="presencialidad">
+                <option value="" selected>En remoto</option>
+                <option value="">Presencial</option>
+            </select>
+            <label for="documento">Documento CV</label>
+            <button class="documento">Subir de nuevo</button>
+            <button id="btn">Borrar</button>
+            <label for="etiquetas">Etiquetas</label>
+            <input type="search" name="etiquetas" id="etiquetas" placeholder="Escribe para buscar...">
+            <div id="container__etiquetas" >
+                <span class="sp1">HTML&CSS <i id="delet" class="fas fa-times"></i></span>
+                <span class="sp2">React <i id="delet" class="fas fa-times"></i></span>
+                <span class="sp3">Angular <i id="delet" class="fas fa-times"></i></span>
+            </div>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>

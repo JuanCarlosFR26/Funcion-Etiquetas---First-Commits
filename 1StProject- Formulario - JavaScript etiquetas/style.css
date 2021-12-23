@@ -1,0 +1,378 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F8F9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    position: relative;
+    width: 500px;
+    height: 914px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6ea;
+    border-radius: 20px;
+    margin: 40px auto;
+}
+
+input, select, button {
+    cursor: pointer;
+}
+
+.img__container {
+    width: 90px;
+    height: 90px;
+}
+
+img {
+    width: 100%;
+    outline: 4px solid #e6e6ea;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container > h3 {
+    position: absolute;
+    width: 338px;
+    height: 28px;   
+    left: 140px;
+    top: 50px;
+    font-size: 24px;
+    font-family: 'Raleway';
+    font-weight: 800;
+}
+
+.container > .ubi {
+    position: absolute;
+    width: 300px;
+    height: 16px;
+    left: 150px;
+    top: 80px;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A5A8B3;
+}
+
+.container > .ubi::before {
+    content: "";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    margin-right: 10px;
+}
+
+.container > .form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 470px;
+    height: 790px;
+}
+
+.form > label {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #121625;
+    letter-spacing: -0.01em;
+    margin-top: 20px;
+}
+
+.form > #name {
+    width: 452px;
+    height: 40px;
+    border: none;
+    background-color: #f8f8f9;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 12px 15px;
+}
+
+.form > #tel {
+    width: 214px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 12px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    background-color: #f8f8f9;
+    margin-top: 12px;
+}
+
+.form > label[for="email"] {
+    position: absolute;
+    left: 254px;
+    top: 200px;
+    
+}
+
+.form > #email {
+    position: absolute;
+    top: 235px;
+    left: 254px;
+    width: 214px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 12px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    background-color: #f8f8f9;
+    margin-top: 12px;
+
+}
+
+.form > label[for="ciudad"] {
+    position: absolute;
+    left: 254px;
+    top: 290px;
+}
+
+.form > #ciudad {
+    width: 214px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 12px 15px;
+    border: none;
+    background-color: #f8f8f9;
+    margin-top: 12px;
+    position: absolute;
+    left: 254px;
+    top: 330px;
+}
+
+.form > label[for="pais"] {
+    position: absolute;
+    left: 26px;
+    top: 290px;
+}
+
+.form > #pais {
+    width: 214px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 12px 15px;
+    border: none;
+    background-color: #f8f8f9;
+    margin-top: 12px;
+    position: absolute;
+    left: 24px;
+    top: 330px;
+}
+
+
+.form > label[for="traslado"] {
+    position: absolute;
+    left: 26;
+    top: 390px;
+}
+
+.form > #traslado {
+    width: 214px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 12px 15px;
+    border: none;
+    background-color: #f8f8f9;
+    margin-top: 12px;
+    position: absolute;
+    left: 24px;
+    top: 430px;
+}
+
+.form > label[for="presencialidad"] {
+    position: absolute;
+    left: 254px;
+    top: 390px;
+}
+
+.form > #presencialidad {
+    width: 214px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 12px 15px;
+    border: none;
+    background-color: #f8f8f9;
+    margin-top: 12px;
+    position: absolute;
+    left: 254px;
+    top: 430px;
+}
+
+.form > label[for="documento"] {
+    position: absolute;
+    left: 26px;
+    top: 490px;
+
+}
+
+.form > .documento {
+    width: 214px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 12px 15px;
+    border: none;
+    background-color: #f8f8f9;
+    margin-top: 12px;
+    position: absolute;
+    left: 24px;
+    top: 530px;
+    background-color: #A5A8B3;
+    color: #ffffff;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    padding-left: 28px;
+}
+
+.form > .documento::before {
+    content: '';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    margin-right: 20px;
+}
+
+.form > #btn {
+    width: 101px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6ea;
+    border-radius: 8px;
+    padding: 5px 14px 5px 10px;
+    position: absolute;
+    top: 540px;
+    left: 250px;
+    color: #000000;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.form > #btn::before {
+    content: '';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    margin-right: 12px;
+}
+
+.form > label[for="etiquetas"] {
+    position: absolute;
+    left: 26px;
+    top: 580px;
+}
+
+.form > #etiquetas {
+    width: 452px;
+    height: 40px;
+    border: none;
+    background-color: #f8f8f9;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 12px 15px;
+    position: absolute;
+    top: 620px;
+}
+
+.form > #etiquetas::-webkit-input-placeholder::after {
+    content: '';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+}
+
+.form > #container__etiquetas {
+    position: relative;
+    top: 390px;
+    width: 452px;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.form > #container__etiquetas > span {
+    background-color: #e6e6ea;
+    width: 103px;
+    height: 24px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight:600;
+    font-size: 13px;
+    line-height: 14px;
+    margin: 3px 4px;
+    padding: 4px;
+}
+
+.form > #container__etiquetas > span > i {
+    margin-left: 12px;
+    cursor: pointer;
+}
+.form > #container__etiquetas > .sp1 {
+    position: relative;
+    background-color: #e6e6ea;
+    width: 103px;
+    height: 24px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight:600;
+    font-size: 13px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form > #container__etiquetas > .sp2 {
+    position: relative;
+    background-color: #e6e6ea;
+    width: 86px;
+    height: 24px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form > #container__etiquetas > .sp3 {
+    position: relative;
+    background-color: #e6e6ea;
+    width: 86px;
+    height: 24px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
